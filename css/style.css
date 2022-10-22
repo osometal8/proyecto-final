@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.main__fondo {
+    background-color: #DDD1B352;
+    grid-column: 1/6;
+    grid-row: 2/3;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #C8BB9C;
+    height: 100px;
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    display: flex;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+header div {
+    align-self: center;
+    padding-left: 5px;
+}
+
+.header__logo--icon {
+    width: 90px;
+    height: 80px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+nav {
+    width: 100%;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.header__menu li a {
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.header__menu li a:hover {
+    color: rgb(79, 79, 206);
+}
+
+footer {
+    background-color: #C8BB9C;
+    width: 100%;
+    height: 50px;
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    border-color: white;
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer__iconos {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+#portada {
+    background-image: url(../assets/Portada-Mitologia.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#portada h1 {
+    font-family: 'Overlock SC', cursive;
+    font-size: 48px;
+    color: #C29520;
+    grid-column: 9/12;
+    grid-row: 2/4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.contenido h2 {
+    width: 100%;
+    font-family: 'Overlock', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.contenido section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.contenido section div {
+    display: flex;
+    width: 380px;
+    height: 130px;
+}
+
+.card__img {
+    display: flex;
+    width: 120px;
+    height: 130px;
+    margin-left: 40px;
+}
+
+.main__fondo section div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__fondo section div div a {
+    text-decoration: none;
+}
+
+.main__fondo section div div p a {
+    text-decoration: underline;
+}
+
+.main__fondo section div div h3 {
+    font-family: 'Overlock', cursive;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+    justify-self: flex-start;
+    color: #000000;
+}
+
+.main__fondo section div div p {
+    padding-left: 10px;
+    font-family: 'Overlock', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    justify-self: flex-start;
+}
+
+#griega {
+    background-image: url(../assets/mitologia-GRIEGA.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#griega h1 {
+    font-family: 'Overlock SC', cursive;
+    font-size: 96px;
+    color: white;
+    -webkit-text-stroke: 1px #A0A0A0;
+    grid-column: 1/12;
+    grid-row: 3/8;
+    justify-self: center;
+}
+
+.main__pagina--fondo {
+    background-color: white;
+    grid-column: 1/6;
+    grid-row: 2/3;
+}
+
+.main__pagina--TituloFondo {
+    background-color: #DDD1B352;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main__pagina--img {
+    width: 85px;
+    height: 100px;
+}
+
+.main__titulo--secundarios {
+    font-family: 'Overlock', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main__pagina__TituloSecundario {
+    font-family: 'Overlock', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: start;
+    color: #000000;
+    display: flex;
+}
+
+.main__pagina--card {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.main__pagina--columna {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__pagina--descripcion {
+    font-family: 'Overlock', cursive;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: start;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__pagina--VerTodos {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.QuitarDecoracion {
+    text-decoration: none;
+}
+
+#egipcia {
+    background-image: url(../assets/mitologia-egipcia.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#egipcia h1 {
+    font-family: 'Overlock SC', cursive;
+    font-size: 96px;
+    color: white;
+    -webkit-text-stroke: 1px #C29520;
+    grid-column: 1/12;
+    grid-row: 3/8;
+    justify-self: center;
+}
+
+#nordica {
+    background-image: url(../assets/mitologia-nordica.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#nordica h1 {
+    font-family: 'Overlock SC', cursive;
+    font-size: 96px;
+    color: white;
+    -webkit-text-stroke: 1px #0057FF;
+    grid-column: 1/12;
+    grid-row: 3/8;
+    justify-self: center;
+}
+
+#contacto {
+    background-image: url(../assets/contacto.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#contacto h1 {
+    font-family: 'Overlock SC', cursive;
+    font-size: 96px;
+    color: white;
+    -webkit-text-stroke: 1px #0057FF;
+    grid-column: 1/12;
+    grid-row: 3/8;
+    justify-self: center;
+}
+
+.contacto__titulo {
+    font-family: 'Overlock', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto__recuadro--peticion {
+    width: 780px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.contacto_centrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__recuadro--porque {
+    width: 780px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__enviar {
+    width: 150px;
+    height: 30px;
+    font-family: 'Overlock', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.contacto__fondo {
+    background-color: #DDD1B352;
+    grid-column: 1/6;
+    grid-row: 2/3;
+
+}
+
+.grid_contacto {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 100px 85vh 50px;
+}
+
+@media (max-width: 768px) {
+
+    #portada {
+        height: 30vh;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    #portada h1 {
+        font-size: 42px;
+        grid-column: 5/8;
+        grid-row: 2/4;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .contenido h2 {
+        font-size: 28px;
+    }
+
+    .contenido section {
+        grid-column: 1/5;
+        grid-row: 3/5;
+        padding-bottom: 20px;
+    }
+
+    .header__menu li a {
+        font-size: 15px;
+    }
+
+    .header__menu {
+        gap: 20px;
+    }
+
+    .card__img {
+        width: 90px;
+        height: 100px;
+    }
+
+    .contenido section div div h3 {
+        font-size: 21px;
+    }
+
+    footer {
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+
+    #griega {
+        height: 25vh;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    #griega h1 {
+        font-size: 70px;
+        grid-column: 1/8;
+        grid-row: 2/6;
+    }
+
+    .main__pagina--fondo {
+        grid-column: 1/5;
+        grid-row: 2/5;
+        padding-bottom: 20px;
+    }
+
+    .main__pagina--img {
+        width: 75px;
+        height: 90px;
+    }
+
+    .main__titulo--secundarios {
+        font-size: 28px;
+    }
+
+    .main__pagina__TituloSecundario {
+        font-size: 22px;
+    }
+
+    .main__pagina--descripcion {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #portada {
+        height: 20vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #portada h1 {
+        font-size: 35px;
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .contenido h2 {
+        font-size: 26px;
+    }
+
+    .contenido section {
+        grid-column: 1/2;
+        grid-row: 3/5;
+        row-gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    footer {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #griega h1 {
+        font-size: 55px;
+        grid-column: 1/8;
+        grid-row: 3/6;
+    }
+
+    #griega {
+        height: 22vh;
+    }
+
+
+    .main__titulo--secundarios {
+        font-size: 24px;
+    }
+}
